@@ -1133,13 +1133,35 @@
       }
 
       .profile-intro-arrow {
-        display: none;
+        position: static;
+        width: 1px;
+        height: 30px;
+        background: #000;
+        opacity: 0.2;
+        transform: none;
+        margin: 8px auto 0;
+      }
+
+      .profile-intro-arrow::after {
+        top: auto;
+        bottom: -2px;
+        left: 50%;
+        transform: translateX(-50%) rotate(180deg);
       }
 
       .profile-linkedin {
         float: none;
         display: block;
-        margin: 0 auto;
+        margin: 0 auto 8px;
+      }
+
+      .profile-container:active .profile-image {
+        filter: grayscale(0) contrast(1.1);
+        transform: scale(1.05);
+      }
+
+      .profile-container:active .profile-ring {
+        opacity: 0.1;
       }
 
       .profile-role {
