@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech Stack Mock</title>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #ffffff;
+      margin: 0;
+      padding: 40px;
+    }
+
+    .tech-stack {
+      max-width: 1200px;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    .tech-stack::before {
+      content: '';
+      position: absolute;
+      top: -50px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 8px;
+      height: 8px;
+      background: #000;
+      border-radius: 50%;
+      opacity: 0.15;
+    }
+
+    .tech-stack h2 {
+      font-size: 36px;
+      font-weight: 700;
+      color: #000;
+      margin: 0 0 80px 0;
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+      position: relative;
+      padding-left: 72px;
+    }
+
+    .tech-stack h2::before {
+      content: '04';
+      position: absolute;
+      left: 0;
+      top: 0;
+      font-size: 14px;
+      font-weight: 400;
+      color: #999;
+      letter-spacing: 0.1em;
+    }
+
+    .categories-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 60px;
+    }
+
+    .category {
+      text-align: center;
+    }
+
+    .category-title {
+      font-size: 10px;
+      color: #000;
+      opacity: 0.4;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      margin-bottom: 32px;
+      font-weight: 500;
+    }
+
+    .tools-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      justify-items: center;
+    }
+
+    .tool-logo {
+      width: 32px;
+      height: 32px;
+      background: #f0f0f0;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease;
+      opacity: 0.6;
+      position: relative;
+    }
+
+    .tool-logo::after {
+      content: '';
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      background: #ddd;
+      border-radius: 2px;
+    }
+
+    .tool-logo:hover {
+      opacity: 1;
+      transform: translateY(-2px);
+      background: #e8f4fd;
+    }
+
+    .tool-logo:hover::after {
+      background: #0066cc;
+    }
+
+    @media (max-width: 768px) {
+      .categories-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+
+      .tools-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 16px;
+      }
+
+      .tool-logo {
+        width: 28px;
+        height: 28px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section class="tech-stack">
+    <h2>My Martech Tech Stack</h2>
+
+    <div class="categories-grid">
+      <div class="category">
+        <div class="category-title">Analytics & Data</div>
+        <div class="tools-grid">
+          <div class="tool-logo"></div>
+          <div class="tool-logo"></div>
+          <div class="tool-logo"></div>
+          <div class="tool-logo"></div>
+          <div class="tool-logo"></div>
+          <div class="tool-logo"></div>
+        </div>
+      </div>
+
+      <div class="category">
+        <div class="category-title">Automation & CRM</div>
+        <div class="tools-grid">
+          <div class="tool-logo"></div>
+          <div class="tool-logo"></div>
+          <div class="tool-logo"></div>
+          <div class="tool-logo"></div>
+          <div class="tool-logo"></div>
+        </div>
+      </div>
+
+      <div class="category">
+        <div class="category-title">Content & Creative</div>
+        <div class="tools-grid">
+          <div class="tool-logo"></div>
+          <div class="tool-logo"></div>
+          <div class="tool-logo"></div>
+          <div class="tool-logo"></div>
+        </div>
+      </div>
+
+      <div class="category">
+        <div class="category-title">Outreach & Sales</div>
+        <div class="tools-grid">
+          <div class="tool-logo"></div>
+          <div class="tool-logo"></div>
+          <div class="tool-logo"></div>
+          <div class="tool-logo"></div>
+          <div class="tool-logo"></div>
+          <div class="tool-logo"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

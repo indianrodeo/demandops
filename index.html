@@ -1,0 +1,1710 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Demand Generation Specialist | RevTech Pipeline Expert</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #ffffff;
+      color: #000000;
+      line-height: 1.6;
+      font-size: 16px;
+      position: relative;
+    }
+
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(255, 194, 126, 0.08);
+      pointer-events: none;
+      z-index: 1000;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    a:focus-visible {
+      outline: 2px solid #000;
+      outline-offset: 4px;
+    }
+
+    .wrapper {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* Header Navigation Style */
+    .nav {
+      padding: 20px 0;
+    }
+
+    .nav .wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-size: 20px;
+      font-weight: 400;
+      color: #000;
+      letter-spacing: 0.02em;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      position: relative;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .logo::before {
+      content: '';
+      width: 8px;
+      height: 8px;
+      background: #000;
+      border-radius: 50%;
+      flex-shrink: 0;
+      position: relative;
+      top: 0.5px;
+    }
+
+    .logo-text {
+      position: relative;
+    }
+
+    .logo-text::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: -4px;
+      width: 1px;
+      height: 12px;
+      background: #000;
+      transform: translateY(-50%);
+      opacity: 0;
+      animation: cursor-blink 1.2s infinite;
+    }
+
+    @keyframes cursor-blink {
+      0%, 50% { opacity: 1; }
+      51%, 100% { opacity: 0; }
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .nav-link {
+      font-size: 15px;
+      font-weight: 500;
+      color: #666;
+      transition: color 0.2s ease;
+    }
+
+    .nav-link:hover {
+      color: #000;
+    }
+
+    .nav-cta {
+      padding: 12px 24px;
+      background: #A4FF4E;
+      color: #000;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 14px;
+      transition: all 0.2s ease;
+      border: 2px solid #A4FF4E;
+    }
+
+    .nav-cta:hover {
+      background: #8FE635;
+      border-color: #8FE635;
+    }
+
+    /* Hero Section */
+    .hero {
+      padding: 120px 0 100px 0;
+      background: #ffffff;
+    }
+
+    .eyebrow {
+      font-size: 14px;
+      font-weight: 600;
+      color: #666;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin: 0 0 24px 0;
+    }
+
+    h1 {
+      font-size: clamp(48px, 6vw, 72px);
+      line-height: 1.1;
+      font-weight: 800;
+      color: #000;
+      margin: 0 0 32px 0;
+      max-width: 900px;
+      letter-spacing: -0.02em;
+    }
+
+    .subline {
+      font-size: 20px;
+      line-height: 1.5;
+      color: #333;
+      margin: 0 0 48px 0;
+      max-width: 600px;
+      font-weight: 400;
+    }
+
+    /* CTA Buttons */
+    .cta-container {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .cta {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 16px 32px;
+      background: #A4FF4E;
+      color: #000;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 16px;
+      transition: all 0.2s ease;
+      border: 2px solid #A4FF4E;
+    }
+
+    .cta:hover {
+      background: #8FE635;
+      border-color: #8FE635;
+    }
+
+    .cta-secondary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 16px 32px;
+      background: transparent;
+      color: #000;
+      border: 2px solid #000;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 16px;
+      transition: all 0.2s ease;
+    }
+
+    .cta-secondary:hover {
+      background: #000;
+      color: #fff;
+    }
+
+    /* Main Content Section */
+    .proof {
+      padding: 100px 0;
+      background: #ffffff;
+      position: relative;
+    }
+
+    .proof::before {
+      content: '';
+      position: absolute;
+      top: -50px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 8px;
+      height: 8px;
+      background: #000;
+      border-radius: 50%;
+      opacity: 0.15;
+    }
+
+    .deliverables {
+      padding: 100px 0;
+      background: #ffffff;
+      position: relative;
+    }
+
+    .deliverables::before {
+      content: '';
+      position: absolute;
+      top: -50px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 8px;
+      height: 8px;
+      background: #000;
+      border-radius: 50%;
+      opacity: 0.15;
+    }
+
+    .results {
+      padding: 100px 0;
+      background: #ffffff;
+      position: relative;
+    }
+
+    .results::before {
+      content: '';
+      position: absolute;
+      top: -50px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 8px;
+      height: 8px;
+      background: #000;
+      border-radius: 50%;
+      opacity: 0.15;
+    }
+
+    .results h2 {
+      font-size: 36px;
+      font-weight: 700;
+      color: #000;
+      margin: 0 0 48px 0;
+      max-width: 600px;
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+      position: relative;
+      padding-left: 72px;
+    }
+
+    .results h2::before {
+      content: '03';
+      position: absolute;
+      left: 0;
+      top: 0;
+      font-size: 14px;
+      font-weight: 400;
+      color: #999;
+      letter-spacing: 0.1em;
+    }
+
+    .deliverables h2 {
+      font-size: 36px;
+      font-weight: 700;
+      color: #000;
+      margin: 0 0 48px 0;
+      max-width: 600px;
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+      position: relative;
+      padding-left: 72px;
+    }
+
+    .deliverables h2::before {
+      content: '02';
+      position: absolute;
+      left: 0;
+      top: 0;
+      font-size: 14px;
+      font-weight: 400;
+      color: #999;
+      letter-spacing: 0.1em;
+    }
+
+    .proof h2 {
+      font-size: 36px;
+      font-weight: 700;
+      color: #000;
+      margin: 0 0 48px 0;
+      max-width: 600px;
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+      position: relative;
+      padding-left: 72px;
+    }
+
+    .proof h2::before {
+      content: '01';
+      position: absolute;
+      left: 0;
+      top: 0;
+      font-size: 14px;
+      font-weight: 400;
+      color: #999;
+      letter-spacing: 0.1em;
+    }
+
+    .proof .wrapper {
+      display: grid;
+      grid-template-columns: 1fr 320px;
+      gap: 80px;
+      align-items: start;
+    }
+
+    .proof-content {
+      max-width: 100%;
+    }
+
+    .profile-container {
+      position: relative;
+      width: 280px;
+      height: 280px;
+      margin: 80px auto 0;
+    }
+
+    .profile-ring {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      border: 1px solid #000;
+      opacity: 0.06;
+      animation: ring-pulse 8s ease-in-out infinite;
+    }
+
+    .profile-ring:nth-child(2) {
+      width: 110%;
+      height: 110%;
+      animation-delay: 0.5s;
+    }
+
+    .profile-ring:nth-child(3) {
+      width: 120%;
+      height: 120%;
+      animation-delay: 1s;
+      opacity: 0.03;
+    }
+
+    @keyframes ring-pulse {
+      0%, 100% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0.06;
+      }
+      50% {
+        transform: translate(-50%, -50%) scale(1.02);
+        opacity: 0.08;
+      }
+    }
+
+    .profile-image-wrapper {
+      position: relative;
+      width: 280px;
+      height: 280px;
+      border-radius: 50%;
+      overflow: hidden;
+      z-index: 2;
+      box-shadow: 0 0 0 1px rgba(0,0,0,0.04);
+    }
+
+    .profile-image-wrapper::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(0,0,0,0.05) 100%);
+      z-index: 1;
+      pointer-events: none;
+      mix-blend-mode: overlay;
+    }
+
+    .profile-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: grayscale(0.2) contrast(1.05);
+      transition: all 0.6s ease;
+    }
+
+    .profile-container:hover .profile-image {
+      filter: grayscale(0) contrast(1.1);
+      transform: scale(1.05);
+    }
+
+    .profile-container:hover .profile-ring {
+      opacity: 0.1;
+    }
+
+    .profile-intro {
+      position: absolute;
+      top: -60px;
+      left: -180px;
+      width: 160px;
+      text-align: right;
+      opacity: 0;
+      animation: intro-fade-in 1s ease 0.8s forwards;
+    }
+
+    @keyframes intro-fade-in {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .profile-intro-text {
+      font-size: 13px;
+      font-weight: 500;
+      color: #000;
+      line-height: 1.4;
+      margin: 0 0 8px 0;
+      letter-spacing: -0.01em;
+    }
+
+    .profile-linkedin {
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23000000'%3E%3Cpath d='M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z'/%3E%3C/svg%3E");
+      background-size: contain;
+      background-repeat: no-repeat;
+      opacity: 0.3;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      float: right;
+    }
+
+    .profile-linkedin:hover {
+      opacity: 0.7;
+      transform: translateY(-1px);
+    }
+
+    .profile-intro-arrow {
+      position: absolute;
+      top: 50%;
+      right: -60px;
+      width: 50px;
+      height: 1px;
+      background: #000;
+      opacity: 0.2;
+      transform: translateY(-50%);
+    }
+
+    .profile-intro-arrow::after {
+      content: '';
+      position: absolute;
+      right: -2px;
+      top: -3px;
+      width: 0;
+      height: 0;
+      border-left: 5px solid #000;
+      border-top: 3px solid transparent;
+      border-bottom: 3px solid transparent;
+      opacity: 0.2;
+    }
+
+    .profile-role {
+      position: absolute;
+      bottom: -50px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 11px;
+      font-weight: 400;
+      color: #000;
+      opacity: 0.25;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      white-space: nowrap;
+      animation: intro-fade-in 1s ease 1.2s forwards;
+      opacity: 0;
+    }
+
+    .bullet-list {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 48px 0;
+      max-width: 700px;
+    }
+
+    .bullet-list li {
+      font-size: 18px;
+      line-height: 1.6;
+      color: #333;
+      margin-bottom: 24px;
+      padding-left: 32px;
+      position: relative;
+      font-weight: 400;
+    }
+
+    .bullet-list li::before {
+      content: "→";
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: #A4FF4E;
+      font-weight: 700;
+      font-size: 20px;
+    }
+
+    .bio {
+      font-size: 18px;
+      line-height: 1.6;
+      color: #333;
+      max-width: 600px;
+      margin: 0 0 24px 0;
+      font-weight: 400;
+    }
+
+    .fit-check {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #666;
+      max-width: 600px;
+      margin: 32px 0 48px 0;
+      font-style: italic;
+      font-weight: 400;
+    }
+
+    /* Million dollar footer */
+    .footer {
+      padding: 100px 0 60px 0;
+      background: #ffffff;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .footer::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 1px;
+      height: 40px;
+      background: #000;
+      opacity: 0.08;
+    }
+
+    .footer-brand {
+      text-align: center;
+      margin: 0 0 80px 0;
+      width: 100%;
+    }
+
+    .footer-brand-text {
+      font-size: clamp(72px, 12vw, 180px);
+      font-weight: 800;
+      color: #000;
+      letter-spacing: -0.03em;
+      line-height: 0.9;
+      opacity: 0.04;
+      user-select: none;
+      pointer-events: none;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      position: relative;
+      display: inline-block;
+    }
+
+    .footer-brand-text::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: -0.15em;
+      width: 0.05em;
+      height: 0.65em;
+      background: #666;
+      transform: translateY(-50%);
+      opacity: 1;
+      animation: cursor-blink-footer 1.2s infinite;
+    }
+
+    @keyframes cursor-blink-footer {
+      0%, 50% { opacity: 1; }
+      51%, 100% { opacity: 0; }
+    }
+
+    .footer-brand::before {
+      content: '';
+      position: absolute;
+      bottom: -24px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 32px;
+      height: 1px;
+      background: #000;
+      opacity: 0.15;
+    }
+
+    .footer-text {
+      font-size: 11px;
+      color: #000;
+      font-weight: 400;
+      letter-spacing: 0.8px;
+      margin: 0;
+      opacity: 0.3;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    /* Pricing Section */
+    .pricing {
+      padding: 100px 0;
+      background: #ffffff;
+      position: relative;
+    }
+
+    .pricing::before {
+      content: '';
+      position: absolute;
+      top: -50px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 8px;
+      height: 8px;
+      background: #000;
+      border-radius: 50%;
+      opacity: 0.15;
+    }
+
+    .pricing h2 {
+      font-size: 36px;
+      font-weight: 700;
+      color: #000;
+      margin: 0 0 60px 0;
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+      position: relative;
+      padding-left: 72px;
+    }
+
+    .pricing h2::before {
+      content: '06';
+      position: absolute;
+      left: 0;
+      top: 0;
+      font-size: 14px;
+      font-weight: 400;
+      color: #999;
+      letter-spacing: 0.1em;
+    }
+
+    /* FAQ Section */
+    .faq {
+      padding: 100px 0;
+      background: #ffffff;
+      position: relative;
+    }
+
+    .faq::before {
+      content: '';
+      position: absolute;
+      top: -50px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 8px;
+      height: 8px;
+      background: #000;
+      border-radius: 50%;
+      opacity: 0.15;
+    }
+
+    .faq h2 {
+      font-size: 36px;
+      font-weight: 700;
+      color: #000;
+      margin: 0 0 80px 0;
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+      position: relative;
+      padding-left: 72px;
+    }
+
+    .faq h2::before {
+      content: '07';
+      position: absolute;
+      left: 0;
+      top: 0;
+      font-size: 14px;
+      font-weight: 400;
+      color: #999;
+      letter-spacing: 0.1em;
+    }
+
+    .faq-list {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .faq-item {
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+      padding: 32px 0;
+      transition: all 0.3s ease;
+    }
+
+    .faq-item:first-child {
+      border-top: 1px solid rgba(0,0,0,0.06);
+    }
+
+    .faq-question {
+      font-size: 18px;
+      font-weight: 600;
+      color: #000;
+      margin: 0 0 16px 0;
+      letter-spacing: -0.01em;
+      line-height: 1.4;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .faq-question::after {
+      content: '+';
+      font-size: 24px;
+      font-weight: 300;
+      color: #000;
+      opacity: 0.3;
+      transition: all 0.3s ease;
+      flex-shrink: 0;
+    }
+
+    .faq-item:hover .faq-question::after {
+      opacity: 0.6;
+    }
+
+    .faq-item.active .faq-question::after {
+      content: '−';
+      opacity: 0.6;
+    }
+
+    .faq-answer {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #666;
+      margin: 0;
+      font-weight: 400;
+      max-width: 700px;
+      max-height: 0;
+      overflow: hidden;
+      opacity: 0;
+      transition: all 0.4s ease;
+    }
+
+    .faq-item.active .faq-answer {
+      max-height: 500px;
+      opacity: 1;
+      margin-top: 16px;
+    }
+
+    .pricing-card {
+      max-width: 600px;
+      margin: 0 auto;
+      background: #ffffff;
+      border: 1px solid rgba(0,0,0,0.08);
+      border-radius: 16px;
+      padding: 48px;
+      position: relative;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.04);
+    }
+
+    .pricing-header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .pricing-title {
+      font-size: 24px;
+      font-weight: 700;
+      color: #000;
+      margin-bottom: 8px;
+      letter-spacing: -0.01em;
+    }
+
+    .pricing-subtitle {
+      font-size: 16px;
+      color: #666;
+      font-weight: 400;
+    }
+
+    .pricing-main {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .price {
+      display: flex;
+      align-items: baseline;
+      justify-content: center;
+      margin-bottom: 32px;
+    }
+
+    .currency {
+      font-size: 24px;
+      font-weight: 600;
+      color: #666;
+      margin-right: 4px;
+    }
+
+    .amount {
+      font-size: 64px;
+      font-weight: 800;
+      color: #000;
+      line-height: 1;
+      letter-spacing: -0.02em;
+    }
+
+    .period {
+      font-size: 18px;
+      font-weight: 500;
+      color: #666;
+      margin-left: 8px;
+    }
+
+    .pricing-features {
+      margin-bottom: 32px;
+    }
+
+    .feature-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .feature-list li {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #333;
+      margin-bottom: 16px;
+      padding-left: 24px;
+      position: relative;
+      text-align: left;
+    }
+
+    .feature-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: #A4FF4E;
+      font-weight: 700;
+      font-size: 16px;
+    }
+
+    .pricing-footer {
+      border-top: 1px solid rgba(0,0,0,0.08);
+      padding-top: 32px;
+    }
+
+    .minimum-contract {
+      text-align: center;
+      margin-bottom: 32px;
+    }
+
+    .minimum-contract strong {
+      font-size: 16px;
+      font-weight: 600;
+      color: #000;
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    .minimum-contract p {
+      font-size: 14px;
+      color: #666;
+      margin: 0;
+      line-height: 1.5;
+    }
+
+    .pricing-cta {
+      display: block;
+      width: 100%;
+      padding: 16px 32px;
+      background: #A4FF4E;
+      color: #000;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 16px;
+      text-align: center;
+      transition: all 0.2s ease;
+      border: 2px solid #A4FF4E;
+      text-decoration: none;
+    }
+
+    .pricing-cta:hover {
+      background: #8FE635;
+      border-color: #8FE635;
+      color: #000;
+    }
+
+    /* Tech Stack Section - $2M Premium Aesthetic */
+    .tech-stack {
+      padding: 100px 0;
+      background: #ffffff;
+      position: relative;
+    }
+
+    .tech-stack::before {
+      content: '';
+      position: absolute;
+      top: -50px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 8px;
+      height: 8px;
+      background: #000;
+      border-radius: 50%;
+      opacity: 0.15;
+    }
+
+    .tech-stack h2 {
+      font-size: 36px;
+      font-weight: 700;
+      color: #000;
+      margin: 0 0 80px 0;
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+      position: relative;
+      padding-left: 72px;
+    }
+
+    .tech-stack h2::before {
+      content: '05';
+      position: absolute;
+      left: 0;
+      top: 0;
+      font-size: 14px;
+      font-weight: 400;
+      color: #999;
+      letter-spacing: 0.1em;
+    }
+
+    .categories-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 60px;
+    }
+
+    .category {
+      text-align: center;
+    }
+
+    .category-title {
+      font-size: 10px;
+      color: #000;
+      opacity: 0.4;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      margin-bottom: 32px;
+      font-weight: 500;
+    }
+
+    .tools-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+      justify-items: center;
+    }
+
+    .tool-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .tool-item:hover {
+      transform: translateY(-4px);
+    }
+
+    .tool-logo {
+      width: 64px;
+      height: 64px;
+      background: #f8f9fa;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease;
+      border: 1px solid rgba(0,0,0,0.06);
+    }
+
+    .tool-item:hover .tool-logo {
+      box-shadow: 0 12px 32px rgba(0,0,0,0.12);
+      background: #ffffff;
+      border-color: rgba(0,0,0,0.1);
+    }
+
+    .tool-logo svg {
+      transition: all 0.3s ease;
+    }
+
+    .tool-item:hover .tool-logo svg {
+      transform: scale(1.1);
+    }
+
+    .tool-name {
+      font-size: 11px;
+      color: #000;
+      font-weight: 500;
+      letter-spacing: 0.3px;
+      opacity: 0.6;
+      transition: all 0.3s ease;
+    }
+
+    .tool-item:hover .tool-name {
+      opacity: 0.9;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .wrapper {
+        padding: 0 20px;
+      }
+
+      .nav-links {
+        display: none;
+      }
+
+      .hero {
+        padding: 80px 0 60px 0;
+      }
+
+      h1 {
+        font-size: 40px;
+        margin-bottom: 24px;
+      }
+
+      .subline {
+        font-size: 18px;
+        margin-bottom: 32px;
+      }
+
+      .cta-container {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .cta, .cta-secondary {
+        width: 100%;
+        justify-content: center;
+        padding: 14px 24px;
+      }
+
+      .proof .wrapper {
+        grid-template-columns: 1fr;
+        gap: 60px;
+      }
+
+      .profile-container {
+        width: 200px;
+        height: 200px;
+        margin: 0 auto;
+      }
+
+      .profile-image-wrapper {
+        width: 200px;
+        height: 200px;
+      }
+
+      .profile-intro {
+        display: none;
+      }
+
+      .profile-role {
+        bottom: -30px;
+        font-size: 10px;
+      }
+
+      .proof {
+        padding: 60px 0;
+      }
+
+      .proof h2 {
+        font-size: 28px;
+        margin-bottom: 32px;
+      }
+
+      .bullet-list li {
+        font-size: 16px;
+        margin-bottom: 20px;
+      }
+
+      .bio {
+        font-size: 16px;
+      }
+
+      .fit-check {
+        font-size: 15px;
+      }
+
+      .pricing {
+        padding: 60px 0;
+      }
+
+      .pricing h2 {
+        font-size: 28px;
+        margin-bottom: 40px;
+      }
+
+      .pricing-card {
+        padding: 32px 20px;
+      }
+
+      .amount {
+        font-size: 48px;
+      }
+
+      .pricing-title {
+        font-size: 20px;
+      }
+
+      .pricing-subtitle {
+        font-size: 14px;
+      }
+
+      .footer {
+        padding: 120px 0 60px 0;
+      }
+
+      .footer-brand-text {
+        font-size: 64px;
+      }
+
+      .footer-brand {
+        margin-bottom: 60px;
+      }
+
+      .tech-stack {
+        padding: 60px 0;
+      }
+
+      .faq {
+        padding: 60px 0;
+      }
+
+      .faq h2 {
+        font-size: 28px;
+        margin-bottom: 60px;
+      }
+
+      .faq-question {
+        font-size: 16px;
+      }
+
+      .faq-answer {
+        font-size: 15px;
+      }
+
+      .tech-stack h2 {
+        font-size: 28px;
+        margin-bottom: 60px;
+      }
+
+      .categories-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+
+      .tools-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+      }
+
+      .tool-item {
+        gap: 8px;
+      }
+
+      .tool-logo {
+        width: 52px;
+        height: 52px;
+      }
+
+      .tool-name {
+        font-size: 10px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 32px;
+      }
+
+      .subline {
+        font-size: 16px;
+      }
+
+      .proof h2 {
+        font-size: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <div class="wrapper">
+      <div class="logo">
+        <span class="logo-text">demandops.co</span>
+      </div>
+      <div class="nav-links">
+        <a href="#faq" class="nav-link">FAQs</a>
+        <a href="https://calendly.com/bhavya-demandops/30min" class="nav-cta" target="_blank" rel="noopener">Work with Me</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="wrapper">
+      <p class="eyebrow">Demand Generation Specialist</p>
+      <h1>Pipeline-owning demand generation specialist for Martech, Salestech, and CXtech SaaS.</h1>
+      <p class="subline">While agencies talk strategy and delegate execution, I dive deep into your product story and personally craft the campaigns that convert prospects into pipeline.</p>
+      <div class="cta-container">
+        <a class="cta" href="https://calendly.com/bhavya-demandops/30min" target="_blank" rel="noopener">Book a Strategy Call</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="proof" id="proof">
+      <div class="wrapper">
+        <div class="proof-content">
+          <h2>From story to demo booked: I handle it all</h2>
+          <ul class="bullet-list">
+            <li>Discover your market narrative or refine what's already working</li>
+            <li>Build the complete demand engine: pages, campaigns, and content</li>
+            <li>Run multichannel execution while you focus on product development</li>
+            <li>Own results from first touchpoint to demo booked</li>
+          </ul>
+          <p class="bio">Most founders either get stuck crafting their story or building campaigns around it. I do both. From messaging frameworks to LinkedIn posts, landing pages to email sequences. One person, complete ownership.</p>
+        </div>
+        <div class="profile-container">
+          <div class="profile-intro">
+            <p class="profile-intro-text">Hi! I'm Bhavya, and I'll be your solo demand ops guy</p>
+            <a href="https://www.linkedin.com/in/bhavyasahni/" target="_blank" rel="noopener noreferrer" class="profile-linkedin" aria-label="Connect on LinkedIn"></a>
+            <div class="profile-intro-arrow"></div>
+          </div>
+          <div class="profile-ring"></div>
+          <div class="profile-ring"></div>
+          <div class="profile-ring"></div>
+          <div class="profile-image-wrapper">
+            <img src="Bhavya.jpeg" alt="Bhavya Sahani" class="profile-image">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="deliverables">
+      <div class="wrapper">
+        <h2>What I personally build for your pipeline</h2>
+        <ul class="bullet-list">
+          <li>Landing pages that convert prospects into demos</li>
+          <li>Build micro-segments of prospects and tailor messaging hierarchy</li>
+          <li>Cold outreach sequences that book qualified calls</li>
+          <li>Sales materials that close faster</li>
+          <li>Founder content that builds authentic demand</li>
+          <li>Campaign infrastructure that scales with you</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="results">
+      <div class="wrapper">
+        <h2>Results snapshot</h2>
+        <ul class="bullet-list">
+          <li><a href="https://loopwork.co" target="_blank" rel="noopener">Loopwork.co</a> - Built their outbound playbook from scratch. Their ideal prospects were customers using Recharge. Returned their investment inside 25 days.</li>
+          <li><a href="https://quickreply.ai" target="_blank" rel="noopener">QuickReply.ai</a> - Scaled them from $500,000 to $2.5M with a marketing team of 3. Activated organic search, PPC, cold email, founder LinkedIn content, events and webinars.</li>
+          <li><a href="https://mettl.com" target="_blank" rel="noopener">Mettl.com</a> - Scaled Mettl from $350,000 to $4M ARR with a team of 4. Channels used: Cold Email, SEO, PPC, Webinars, Events.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="tech-stack">
+      <div class="wrapper">
+        <h2>My Martech Tech Stack</h2>
+        <div class="categories-grid">
+          <div class="category">
+            <div class="category-title">Automation & CRM</div>
+            <div class="tools-grid">
+              <div class="tool-item">
+                <div class="tool-logo hubspot">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <g transform="translate(12,12)">
+                      <circle cx="0" cy="0" r="2" fill="#ff7a45"/>
+                      <circle cx="0" cy="-6" r="1.5" fill="#ff7a45"/>
+                      <circle cx="6" cy="0" r="1.5" fill="#ff7a45"/>
+                      <circle cx="0" cy="6" r="1.5" fill="#ff7a45"/>
+                      <circle cx="-6" cy="0" r="1.5" fill="#ff7a45"/>
+                      <circle cx="4.5" cy="-4.5" r="1.5" fill="#ff7a45"/>
+                      <circle cx="4.5" cy="4.5" r="1.5" fill="#ff7a45"/>
+                      <circle cx="-4.5" cy="4.5" r="1.5" fill="#ff7a45"/>
+                      <circle cx="-4.5" cy="-4.5" r="1.5" fill="#ff7a45"/>
+                      <line x1="0" y1="-2" x2="0" y2="-4.5" stroke="#ff7a45" stroke-width="1.5"/>
+                      <line x1="2" y1="0" x2="4.5" y2="0" stroke="#ff7a45" stroke-width="1.5"/>
+                      <line x1="0" y1="2" x2="0" y2="4.5" stroke="#ff7a45" stroke-width="1.5"/>
+                      <line x1="-2" y1="0" x2="-4.5" y2="0" stroke="#ff7a45" stroke-width="1.5"/>
+                      <line x1="1.4" y1="-1.4" x2="3.1" y2="-3.1" stroke="#ff7a45" stroke-width="1.5"/>
+                      <line x1="1.4" y1="1.4" x2="3.1" y2="3.1" stroke="#ff7a45" stroke-width="1.5"/>
+                      <line x1="-1.4" y1="1.4" x2="-3.1" y2="3.1" stroke="#ff7a45" stroke-width="1.5"/>
+                      <line x1="-1.4" y1="-1.4" x2="-3.1" y2="-3.1" stroke="#ff7a45" stroke-width="1.5"/>
+                    </g>
+                  </svg>
+                </div>
+                <div class="tool-name">HubSpot</div>
+              </div>
+              <div class="tool-item">
+                <div class="tool-logo zapier">
+                  <img src="https://cdn.simpleicons.org/zapier/FF4F00" alt="Zapier" width="32" height="32" role="img" aria-label="Zapier" />
+                </div>
+                <div class="tool-name">Zapier</div>
+              </div>
+              <div class="tool-item">
+                <div class="tool-logo n8n">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <circle cx="5" cy="12" r="2" fill="white" stroke="#ea4b71" stroke-width="2.5"/>
+                    <circle cx="10" cy="12" r="2" fill="white" stroke="#ea4b71" stroke-width="2.5"/>
+                    <circle cx="15" cy="8" r="2" fill="white" stroke="#ea4b71" stroke-width="2.5"/>
+                    <circle cx="15" cy="16" r="2" fill="white" stroke="#ea4b71" stroke-width="2.5"/>
+                    <circle cx="20" cy="6" r="2" fill="white" stroke="#ea4b71" stroke-width="2.5"/>
+                    <line x1="7" y1="12" x2="8" y2="12" stroke="#ea4b71" stroke-width="3"/>
+                    <line x1="12" y1="12" x2="13" y2="10" stroke="#ea4b71" stroke-width="3"/>
+                    <line x1="12" y1="12" x2="13" y2="14" stroke="#ea4b71" stroke-width="3"/>
+                    <line x1="17" y1="8" x2="18" y2="6" stroke="#ea4b71" stroke-width="3"/>
+                  </svg>
+                </div>
+                <div class="tool-name">n8n</div>
+              </div>
+            </div>
+          </div>
+          <div class="category">
+            <div class="category-title">Outreach & Sales</div>
+            <div class="tools-grid">
+              <div class="tool-item">
+                <div class="tool-logo instantly">
+                  <img src="https://cdn.prod.website-files.com/63860c8c65e7bef4a1eeebeb/67ab2655638fdc00dc35c630_Group%201%20(2).svg" alt="Instantly" width="32" height="32" role="img" aria-label="Instantly" />
+                </div>
+                <div class="tool-name">Instantly</div>
+              </div>
+              <div class="tool-item">
+                <div class="tool-logo apollo">
+                  <img src="https://cdn.simpleicons.org/apollographql/311C87" alt="Apollo.io" width="32" height="32" role="img" aria-label="Apollo.io" />
+                </div>
+                <div class="tool-name">Apollo.io</div>
+              </div>
+              <div class="tool-item">
+                <div class="tool-logo mailwarm">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="#4CAF50">
+                    <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                  </svg>
+                </div>
+                <div class="tool-name">Mailwarm</div>
+              </div>
+              <div class="tool-item">
+                <div class="tool-logo storeleads">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="#FF6B35">
+                    <path d="M19 7h-3V6a4 4 0 0 0-8 0v1H5a1 1 0 0 0-1 1v11a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V8a1 1 0 0 0-1-1zM10 6a2 2 0 0 1 4 0v1h-4V6zm8 13a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V9h2v1a1 1 0 0 0 2 0V9h4v1a1 1 0 0 0 2 0V9h2v10z"/>
+                  </svg>
+                </div>
+                <div class="tool-name">Storeleads</div>
+              </div>
+              <div class="tool-item">
+                <div class="tool-logo builtwith">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="#00A3E0">
+                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                  </svg>
+                </div>
+                <div class="tool-name">BuiltWith</div>
+              </div>
+            </div>
+          </div>
+          <div class="category">
+            <div class="category-title">SEO</div>
+            <div class="tools-grid">
+              <div class="tool-item">
+                <div class="tool-logo ahrefs">
+                  <img src="https://assets-3b70.kxcdn.com/images/mediakit/logo_blue@2x.png?v=2" alt="Ahrefs" width="32" height="32" role="img" aria-label="Ahrefs" />
+                </div>
+                <div class="tool-name">Ahrefs</div>
+              </div>
+              <div class="tool-item">
+                <div class="tool-logo alsoasked">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <rect width="24" height="24" rx="4" fill="#4285F4"/>
+                    <path d="M6 12L12 8L18 12L12 16L6 12Z" fill="white"/>
+                    <circle cx="12" cy="12" r="2" fill="#4285F4"/>
+                  </svg>
+                </div>
+                <div class="tool-name">AlsoAsked</div>
+              </div>
+              <div class="tool-item">
+                <div class="tool-logo thruu">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <rect x="3" y="5" width="2" height="14" rx="1" fill="#2563EB"/>
+                    <rect x="7" y="8" width="2" height="11" rx="1" fill="#2563EB"/>
+                    <rect x="11" y="6" width="2" height="13" rx="1" fill="#2563EB"/>
+                    <rect x="15" y="9" width="2" height="10" rx="1" fill="#2563EB"/>
+                    <rect x="19" y="7" width="2" height="12" rx="1" fill="#2563EB"/>
+                  </svg>
+                </div>
+                <div class="tool-name">Thruuu</div>
+              </div>
+            </div>
+          </div>
+          <div class="category">
+            <div class="category-title">Analytics & Measurement</div>
+            <div class="tools-grid">
+              <div class="tool-item">
+                <div class="tool-logo google-analytics">
+                  <img src="https://cdn.simpleicons.org/googleanalytics/E37400" alt="Google Analytics" width="32" height="32" role="img" aria-label="Google Analytics" />
+                </div>
+                <div class="tool-name">Google Analytics</div>
+              </div>
+              <div class="tool-item">
+                <div class="tool-logo hubspot-analytics">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <g transform="translate(12,12)">
+                      <circle cx="0" cy="0" r="2" fill="#ff7a45"/>
+                      <circle cx="0" cy="-6" r="1.5" fill="#ff7a45"/>
+                      <circle cx="6" cy="0" r="1.5" fill="#ff7a45"/>
+                      <circle cx="0" cy="6" r="1.5" fill="#ff7a45"/>
+                      <circle cx="-6" cy="0" r="1.5" fill="#ff7a45"/>
+                      <circle cx="4.5" cy="-4.5" r="1.5" fill="#ff7a45"/>
+                      <circle cx="4.5" cy="4.5" r="1.5" fill="#ff7a45"/>
+                      <circle cx="-4.5" cy="4.5" r="1.5" fill="#ff7a45"/>
+                      <circle cx="-4.5" cy="-4.5" r="1.5" fill="#ff7a45"/>
+                      <line x1="0" y1="-2" x2="0" y2="-4.5" stroke="#ff7a45" stroke-width="1.5"/>
+                      <line x1="2" y1="0" x2="4.5" y2="0" stroke="#ff7a45" stroke-width="1.5"/>
+                      <line x1="0" y1="2" x2="0" y2="4.5" stroke="#ff7a45" stroke-width="1.5"/>
+                      <line x1="-2" y1="0" x2="-4.5" y2="0" stroke="#ff7a45" stroke-width="1.5"/>
+                      <line x1="1.4" y1="-1.4" x2="3.1" y2="-3.1" stroke="#ff7a45" stroke-width="1.5"/>
+                      <line x1="1.4" y1="1.4" x2="3.1" y2="3.1" stroke="#ff7a45" stroke-width="1.5"/>
+                      <line x1="-1.4" y1="1.4" x2="-3.1" y2="3.1" stroke="#ff7a45" stroke-width="1.5"/>
+                      <line x1="-1.4" y1="-1.4" x2="-3.1" y2="-3.1" stroke="#ff7a45" stroke-width="1.5"/>
+                    </g>
+                  </svg>
+                </div>
+                <div class="tool-name">HubSpot</div>
+              </div>
+              <div class="tool-item">
+                <div class="tool-logo google-tag-manager">
+                  <img src="https://cdn.simpleicons.org/googletagmanager/246FDB" alt="Google Tag Manager" width="32" height="32" role="img" aria-label="Google Tag Manager" />
+                </div>
+                <div class="tool-name">Google Tag Manager</div>
+              </div>
+            </div>
+          </div>
+          <div class="category">
+            <div class="category-title">Content & Collaboration</div>
+            <div class="tools-grid">
+              <div class="tool-item">
+                <div class="tool-logo notion">
+                  <img src="https://cdn.simpleicons.org/notion/000000" alt="Notion" width="32" height="32" role="img" aria-label="Notion" />
+                </div>
+                <div class="tool-name">Notion</div>
+              </div>
+              <div class="tool-item">
+                <div class="tool-logo slack">
+                  <img src="https://cdn.simpleicons.org/slack/4A154B" alt="Slack" width="32" height="32" role="img" aria-label="Slack" />
+                </div>
+                <div class="tool-name">Slack</div>
+              </div>
+              <div class="tool-item">
+                <div class="tool-logo google-workspace">
+                  <img src="https://cdn.simpleicons.org/google/4285F4" alt="Google Workspace" width="32" height="32" role="img" aria-label="Google Workspace" />
+                </div>
+                <div class="tool-name">Google Workspace</div>
+              </div>
+              <div class="tool-item">
+                <div class="tool-logo airtable">
+                  <img src="https://cdn.simpleicons.org/airtable/18BFFF" alt="Airtable" width="32" height="32" role="img" aria-label="Airtable" />
+                </div>
+                <div class="tool-name">Airtable</div>
+              </div>
+            </div>
+          </div>
+          <div class="category">
+            <div class="category-title">Ad Platforms</div>
+            <div class="tools-grid">
+              <div class="tool-item">
+                <div class="tool-logo google-ads">
+                  <img src="https://cdn.simpleicons.org/googleads/4285F4" alt="Google Ads" width="32" height="32" role="img" aria-label="Google Ads" />
+                </div>
+                <div class="tool-name">Google Ads</div>
+              </div>
+              <div class="tool-item">
+                <div class="tool-logo linkedin-ads">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="#0A66C2">
+                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                  </svg>
+                </div>
+                <div class="tool-name">LinkedIn Ads</div>
+              </div>
+              <div class="tool-item">
+                <div class="tool-logo meta-ads">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" opacity="0.4">
+                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" fill="#1877F2"/>
+                  </svg>
+                </div>
+                <div class="tool-name">Meta Ads <span style="font-size: 9px; color: #999; font-weight: 400; margin-left: 4px;">(WIP)</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="category">
+            <div class="category-title">AI Tools</div>
+            <div class="tools-grid">
+              <div class="tool-item">
+                <div class="tool-logo claude-code">
+                  <img src="https://claude.ai/favicon.ico" alt="Claude Code" width="32" height="32" role="img" aria-label="Claude Code" />
+                </div>
+                <div class="tool-name">Claude Code</div>
+              </div>
+              <div class="tool-item">
+                <div class="tool-logo chatgpt">
+                  <img src="https://cdn.simpleicons.org/openai/412991" alt="ChatGPT" width="32" height="32" role="img" aria-label="ChatGPT" />
+                </div>
+                <div class="tool-name">ChatGPT</div>
+              </div>
+              <div class="tool-item">
+                <div class="tool-logo gemini">
+                  <img src="https://www.gstatic.com/lamda/images/gemini_sparkle_v002_d4735304ff6292a690345.svg" alt="Gemini" width="32" height="32" role="img" aria-label="Gemini" />
+                </div>
+                <div class="tool-name">Gemini</div>
+              </div>
+              <div class="tool-item">
+                <div class="tool-logo napkin-ai">
+                  <img src="https://napkin.ai/assets/napkin-logo-2024.svg" alt="Napkin.ai" width="32" height="32" role="img" aria-label="Napkin.ai" />
+                </div>
+                <div class="tool-name">Napkin.ai</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pricing">
+      <div class="wrapper">
+        <h2>Pricing</h2>
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <div class="pricing-title">Daily Pipeline Build</div>
+            <div class="pricing-subtitle">4 hours daily • 5 days per week • Embedded with your team</div>
+          </div>
+          <div class="pricing-main">
+            <div class="price">
+              <span class="currency">$</span>
+              <span class="amount">5,000</span>
+              <span class="period">/month</span>
+            </div>
+            <div class="pricing-features">
+              <ul class="feature-list">
+                <li>20 hours weekly dedicated time</li>
+                <li>Work hours set by your team</li>
+                <li>Embedded pipeline development</li>
+                <li>Real-time collaboration & execution</li>
+                <li>Results visible within 30 days</li>
+              </ul>
+            </div>
+          </div>
+          <div class="pricing-footer">
+            <div class="minimum-contract">
+              <strong>3-month minimum commitment</strong>
+              <p>Pipeline development requires sustained execution. Real results show after 90 days of consistent work.</p>
+            </div>
+            <a class="pricing-cta" href="https://calendly.com/bhavya-demandops/30min" target="_blank" rel="noopener">Start Pipeline Build</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq" id="faq">
+      <div class="wrapper">
+        <h2>Common Questions</h2>
+        <div class="faq-list">
+          <div class="faq-item">
+            <h3 class="faq-question">What are the messaging frameworks that I use?</h3>
+            <p class="faq-answer">Why, How, What, and Why Now. These frameworks help clarify your value proposition, differentiation, and urgency. Essential for cutting through noise in competitive markets.</p>
+          </div>
+          <div class="faq-item">
+            <h3 class="faq-question">How much of my time do you want to ramp up?</h3>
+            <p class="faq-answer">5 hours of dedicated founder time per month. Occasionally, I may ask for more during critical phases like campaign launches or strategic pivots.</p>
+          </div>
+          <div class="faq-item">
+            <h3 class="faq-question">How is your "way of working"?</h3>
+            <p class="faq-answer">Very hands-on and always on keyboard. I swim in and out of your CRMs, sales transcripts, documentation, and sync with your team in real-time meetings.</p>
+          </div>
+          <div class="faq-item">
+            <h3 class="faq-question">How do you propose campaign strategy?</h3>
+            <p class="faq-answer">I build a thesis based on structured deep dives into your market, competitors, and customer conversations. Then present the strategy to founders before execution.</p>
+          </div>
+          <div class="faq-item">
+            <h3 class="faq-question">What channels are you good at?</h3>
+            <p class="faq-answer">My primary strengths are SEO, Cold Email, and founder LinkedIn content. I have working knowledge of ad platforms and solve point-use cases for any channel. I rely on LLMs to accelerate execution.</p>
+          </div>
+          <div class="faq-item">
+            <h3 class="faq-question">What metric do you hold yourself accountable for?</h3>
+            <p class="faq-answer">Qualified pipeline. I focus on generating demos and opportunities that match your ICP, not vanity metrics.</p>
+          </div>
+          <div class="faq-item">
+            <h3 class="faq-question">Can you build automations for my RevOps cadence?</h3>
+            <p class="faq-answer">Yes, I use CRM and n8n automations for revenue ops cadences. From lead routing to follow-up sequences and pipeline alerts.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrapper">
+      <div class="footer-brand">
+        <span class="footer-brand-text">demandops.co</span>
+      </div>
+      <p class="footer-text">Made with <span style="color: #ff0000;">♡</span> using Claude Code</p>
+    </div>
+  </footer>
+
+  <script>
+    // FAQ Accordion functionality
+    document.addEventListener('DOMContentLoaded', function() {
+      const faqItems = document.querySelectorAll('.faq-item');
+
+      faqItems.forEach(item => {
+        const question = item.querySelector('.faq-question');
+
+        question.addEventListener('click', () => {
+          const isActive = item.classList.contains('active');
+
+          // Close all other items
+          faqItems.forEach(otherItem => {
+            if (otherItem !== item) {
+              otherItem.classList.remove('active');
+            }
+          });
+
+          // Toggle current item
+          if (isActive) {
+            item.classList.remove('active');
+          } else {
+            item.classList.add('active');
+          }
+        });
+      });
+
+      // Open first FAQ by default
+      if (faqItems.length > 0) {
+        faqItems[0].classList.add('active');
+      }
+    });
+  </script>
+</body>
+</html>
