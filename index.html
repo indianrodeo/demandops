@@ -1234,17 +1234,19 @@
       }
 
       .footer-brand-text {
-        font-size: 56px;
-        letter-spacing: -0.02em;
+        font-size: 48px;
+        letter-spacing: -0.03em;
+        word-break: keep-all;
+        white-space: nowrap;
       }
 
       .footer-brand-text::after {
         content: '';
         position: absolute;
         top: 50%;
-        right: -0.1em;
-        width: 0.04em;
-        height: 0.6em;
+        right: -0.15em;
+        width: 3px;
+        height: 28px;
         background: #666;
         transform: translateY(-50%);
         opacity: 1;
@@ -1253,7 +1255,8 @@
 
       .footer-brand {
         margin-bottom: 60px;
-        padding: 0 20px;
+        padding: 0 16px;
+        overflow-x: visible;
       }
 
       .tech-stack {
